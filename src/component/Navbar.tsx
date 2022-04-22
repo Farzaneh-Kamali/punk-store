@@ -9,19 +9,19 @@ export const Navbar = () => {
         className="mr-4 text-white hover:text-gray-700 focus:text-gray-700"
         href="/"
       >
-        <FontAwesomeIcon icon={solid('home')} />
+        <FontAwesomeIcon icon={solid('home')} title="Home" />
       </a>
       <a
         className="mr-4 text-white hover:text-gray-700 focus:text-gray-700"
         href="/cart"
       >
-        <FontAwesomeIcon icon={solid('cart-shopping')} />
+        <FontAwesomeIcon icon={solid('cart-shopping')} title="Cart" />
       </a>
       <a
         className="mr-4 text-white hover:text-gray-700 focus:text-gray-700"
         href="/favorite"
       >
-        <FontAwesomeIcon icon={solid('heart')} />
+        <FontAwesomeIcon icon={solid('heart')} title="Favorite" />
       </a>
     </nav>
   );
