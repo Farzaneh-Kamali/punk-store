@@ -1,11 +1,20 @@
 import React from 'react';
-import background from './assest/background.jpg';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './component/Home';
+import { Cart } from './component/Cart';
+import { Favorite } from './component/Favorite';
+import { Footer } from './component/Footer';
 
 function App() {
   return (
-    <div className="flex h-full w-full">
-      <div className="w-1/3 bg-black ">Hello</div>
-      <div className="w-2/3"></div>
+    <div className="background-image">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="cart" element={<Cart />} />
+        <Route path="favorite" element={<Favorite />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
