@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sort } from './Sort';
+import { Menu } from './Menu/Menu';
+import { Sort } from './Sort/Sort';
 
 export const Home = () => {
   return (
@@ -8,7 +9,9 @@ export const Home = () => {
         <div className="w-1/4 p-4 m-5 bg-white">
           <Sort />
         </div>
-        <div className="w-3/4 m-5 bg-white"></div>
+        <div className="w-3/4 m-5 bg-white">
+          <Menu />
+        </div>
       </div>
     </>
   );

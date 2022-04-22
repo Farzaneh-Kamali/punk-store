@@ -5,7 +5,7 @@ import { Home } from './component/Home';
 import { Cart } from './component/Cart';
 import { Favorite } from './component/Favorite';
 import { Footer } from './component/Footer';
-import { Navbar } from './component/Navbar';
+import { Navbar } from './component/Navbar/Navbar';
 
 function App() {
   return (
