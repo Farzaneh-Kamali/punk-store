@@ -1,14 +1,14 @@
 import React from 'react';
 
-export const TabItem = ({ item }: { item: string }) => {
+export const TabItem = ({ item, show }: { item: string; show?: boolean }) => {
   return (
     <div
-      className="tab-pane fade show active"
+      className={`tab-pane fade m-4 ${show ? 'show active' : ''} `}
       id={`pills-${item}Justify`}
       role="tabpanel"
       aria-labelledby={`pills-${item}-tabJustify`}
     >
-      Tab 1 content justify
+      {item} content justify
     </div>
   );
 };

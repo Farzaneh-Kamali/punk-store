@@ -10,12 +10,12 @@ export const Menu = () => {
         id="pills-tabJustify"
         role="tablist"
       >
-        <MenuItems item="All" />
+        <MenuItems item="All" active={true} />
         <MenuItems item="Pizza" />
         <MenuItems item="Steak" />
       </ul>
       <div className="tab-content" id="pills-tabContentJustify">
-        <TabItem item="All" />
+        <TabItem item="All" show={true} />
         <TabItem item="Pizza" />
         <TabItem item="Steak" />
       </div>
